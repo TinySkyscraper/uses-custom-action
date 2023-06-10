@@ -1,0 +1,7 @@
+name: JavaScript Deploy Action
+description: "deploys static website via AWS S3"
+runs:
+  using: "node16"
+  #pre:
+  main: "main.js"
+  #post:
