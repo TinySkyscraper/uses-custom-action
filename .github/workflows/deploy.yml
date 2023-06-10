@@ -26,7 +26,7 @@ jobs:
         with:
           caching: 'true'
       - name: Output Info
-        run: echo "steps.cached-deps.outputs.used-cache"
+        run: echo "${{steps.cached-deps.outputs.used-cache}}"
       - name: Test code
         id: run-tests
         run: npm run test
