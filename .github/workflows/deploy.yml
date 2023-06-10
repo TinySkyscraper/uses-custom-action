@@ -24,7 +24,7 @@ jobs:
         id: cached-deps
         uses: ./.github/actions/cached-deps
         with:
-          caching: 'true'
+          caching: 'false'
       - name: Output Info
         run: echo "${{steps.cached-deps.outputs.used-cache}}"
       - name: Test code
